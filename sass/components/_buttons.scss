@@ -1,0 +1,138 @@
+// top right bottom left
+$button-border-width: 2px;
+$border-strength: .2;
+$button-padding: calc(.5rem - 3px) .75rem calc(.25rem - 1px);
+$dark: rgba(0,0,0,$border-strength);
+$light: rgba(255,255,255,$border-strength);
+$border-outset: $light $dark $dark $light;
+$border-inset: $dark $light $light $dark;
+
+@mixin button ($color, $hover-color) {
+  background-color: $color;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+
+  &.btn-ghost {
+    border-color: $color;
+    color: $color;
+  }
+}
+
+
+// Button -----------------------------------------------------
+
+.btn {
+  position: relative;
+  padding: $button-padding;
+  border-width: $button-border-width;
+  border-style: solid;
+  border-radius: $button-radius;
+  border-color: $border-outset;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    border-color: $border-inset;
+  }
+
+  &:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+  }
+
+  &.btn-ghost {
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      border-color: $border-inset;
+    }
+  }
+}
+
+.btn-primary { @include button ($blue, $blue-700); }
+.btn-success { @include button ($green, $green-700); }
+.btn-info    { @include button ($cyan, $cyan-700); }
+.btn-warning { @include button ($orange, $orange-700); }
+.btn-error   { @include button ($red, $red-700); }
+
+.btn-default {
+  background-color: $grey-200;
+  color: $grey-700;
+
+  &:hover,
+  &:focus {
+    background-color: $grey-400;
+    color: $white;
+  }
+
+  &.btn-ghost {
+    border-color: $grey-400;
+    color: $grey-700;
+  }
+}
+
+.btn-link {
+  border-color: transparent;
+  background-color: transparent;
+  color: $blue;
+
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    color: $blue-700;
+    text-decoration: underline;
+  }
+}
+
+.btn[disabled] {
+  cursor: not-allowed;
+
+  &,
+  &:hover,
+  &:focus {
+    background-color: $grey-100;
+    border-color: $border-outset;
+    color: $grey-400;
+  }
+
+  &.btn-ghost,
+  &.btn-ghost:hover {
+    background-color: transparent;
+    border-color: $grey-400;
+    color: $grey-400;
+  }
+}
+
+
+// Button Group -----------------------------------------------
+
+.btn-addon {
+  padding: $button-padding;
+  border: $button-border-width solid transparent;
+
+  &:first-child { padding-left: 0; }
+}
+
+.btn-group {
+  @extend .input-group;
+
+  .btn {
+    flex-grow: 1;
+    border-radius: 0;
+    word-break: break-all;
+    word-break: break-word; // If supported
+
+    &:first-of-type { border-radius: $button-radius 0 0 $button-radius; }
+    &:last-of-type { border-radius: 0 $button-radius $button-radius 0; }
+  }
+
+  .btn-ghost:not(:first-child) { margin-left: -$button-border-width; }
+}

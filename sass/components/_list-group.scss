@@ -1,0 +1,48 @@
+.list-striped > *:nth-child(even):not(.btn) {
+  background-color: $grey-100;
+}
+
+.list-group {
+  padding: 0;
+  border: $border-width solid $grey-300;
+  border-radius: $button-radius;
+
+  & > * {
+    display: block;
+    margin: 0;
+    padding: calc(.5rem - 1px) .5rem .25rem;
+    border: 0;
+
+    &:first-child { padding-top: calc(.5rem - 2px); }
+  }
+
+  & > a,
+  & > button {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  button:not(.btn) {
+    @extend a;
+    text-align: left;
+    background-color: $white;
+  }
+
+  & > li:before { display: none; }
+
+  & > *:not(:last-child) {
+    border-bottom: $border-width solid $grey-300;
+  }
+
+  & > .disabled {
+    color: $grey;
+    cursor: not-allowed;
+    background-color: $grey-200;
+  }
+
+  & > .active.active,
+  & > .active.active:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}

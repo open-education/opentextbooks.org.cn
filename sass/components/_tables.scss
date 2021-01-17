@@ -1,0 +1,64 @@
+// Table ------------------------------------------------------
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  vertical-align: top;
+  border: $border-width solid $grey-300;
+  padding: calc(.5rem - 1px) .5rem .3rem;
+}
+
+thead th {
+  color: $grey-800;
+  text-align: center;
+  background-color: $grey-200;
+}
+
+caption {
+  caption-side: bottom;
+  padding-top: .75rem;
+  color: $grey;
+}
+
+// Modifiers --------------------------------------------------
+
+.table-fixed { table-layout: fixed; }
+
+.table-striped tr:nth-child(even) td {
+  background-color: $grey-100;
+}
+
+.table-hover tr:hover td {
+  background-color: $grey-200;
+}
+
+.table-narrow td,
+.table-narrow th { padding: calc(.25rem - 1px) .5rem 0; }
+
+.table-wide td,
+.table-wide th { padding: calc(.875rem - 1px) 1rem .625rem; }
+
+thead.text-left > tr > th { text-align: left; }
+
+
+// States -----------------------------------------------------
+
+// TODO re-evaluate
+
+// @mixin cell-border ($border-color) {
+//   border-top-color: $border-color;
+//   border-bottom-color: $border-color;
+// }
+
+// table {
+//   .bg-active  { @include cell-border ($blue-200); }
+//   .bg-success { @include cell-border ($green-200); }
+//   .bg-info    { @include cell-border ($cyan-200); }
+//   .bg-warning { @include cell-border ($orange-200); }
+//   .bg-error   { @include cell-border ($red-200); }
+// }
