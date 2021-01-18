@@ -1,34 +1,1078 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta charset="utf-8">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>开放教科书</title>
 <meta name="description" content="开放教科书计划" />
 <meta name="keywords" content="CK12, 教材, 开放教科书, 开放教材, 中文社区, open textbooks" />
 </head>
+   <link rel="stylesheet" href="tawian-frontend.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cousine:400,400i,700,700i">
+   <link rel="shortcut icon" href="favicon.ico">
+   <link rel="apple-touch-icon" href="icon.png">
+   <link rel="manifest" href="manifest.json">
+
+   <style>
+      .example-grid .inner {
+         background-color: #eee;
+         text-align: center;
+      }
+      @media screen and (max-width: 48rem) {
+         .github-corner { display: none; }
+      }
+   </style>
+</head>
+
 <body>
 
-<h3>开放教科书计划</h3> 
-<p>开放教科书项目旨在建立共建共享、开放开阔的教科书 。它一般支持Creative Commons License和GNU Freed Documentation License协议。任何人不需作者的许可即可以浏览、下载、编辑或打印教科书的内容。
-<ul>
-   <li> 开放版权，降低获取信息的门槛 ：开放教科书是免费下载的，通常使用在线浏览或者离线PDF及ePub格式，大大降低获取信息的难度和门槛。</li>
-    <li>开放价值观，自由改编内容 ：参与者可依受众程度和需要，自由编辑内容，提高教学效率，同时用开放协作的精神促进开放价值观的交流。</li>
-    </ul>
+   <div class="container">
 
-</p>
+      <header class="site-header dashed-bottom">
+         <a class="site-title" href="#">开放教科书</a>
+         <nav class="responsive-nav">
+            <label for="navigation-toggle">
+               <svg class="i"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons.svg#i-menu"></use></svg>
+            </label>
+         </nav>
+         <input type="checkbox" id="navigation-toggle">
+         <nav class="site-nav nav-separated">
+            <form class="site-search" action="." method="GET">
+               <input type="search" name="search" placeholder="search">
+            </form>
+            <ul>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+            </ul>
+         </nav>
+      </header>
 
-<h3>项目进度表</h3>
-<p>Kick-off:Dec 25, 2020</p>
-<p>Alpha review: March 25, 2021<p>
+      <main class="site-main">
 
-<h3 id="Talk">Talk</h3>
-<p>欢迎加入在线交流：</p>
-<ul>
-<li>QQ群：238762419</li>
-<li>Telegram：<a href="https://t.me/opentextbooks">加入</a></li>
-  <li>微信群：请添加微信 opensourceleslie 邀请加入，添加请注明：开放教科书</li>
-</ul>
- 
+         <h1>Open Textboooks</h1>
+
+
+         <h3>愿景和目标</h3>
+
+         <p class="lead">开放教科书项目旨在建立共建共享、开放开阔的教科书 。</p>
+
+         <p>
+            开放教科书项目旨在建立共建共享、开放开阔的教科书 ，中文开放教科书项目由<a href="#">开放教育反应堆</a>发起。它一般支持 Creative Commons License 和 GNU Freed Documentation License 协议。任何人不需作者的许可即可以浏览、下载、编辑或打印教科书的内容。   <em>italic</em> incididunt ut <strong>bold</strong> et dolore magna aliqua. Ut enim ad , <del>deletion</del> quis nostrud exercitation <ins>insertation</ins> ullamco laboris <u>underlined</u> nisi ut aliquip ex <small>small</small> ea commodo consequat <abbr title="Abbreviation">abbr</abbr>. Duis aute irure dolor in reprehenderit <kbd>⌘</kbd> + <kbd>Space</kbd> in  laborum.<sup id="fnref:example"><a href="#fn:example" class="footnote">1</a></sup>
+         </p>
+
+         <p class="truncate"><mark>开放 <mark>共建</mark> 共享</mark> 是开放教科书的主要特点。</p>
+
+
+         <h3>学科</h3>
+
+         <div class="grid">
+            <div class="cell">
+               <ul>
+                  <li>计算机
+                     <ul>
+                        <li>Sub Item</li>
+                        <li>Sub Item</li>
+                        <li>Sub Item</li>
+                     </ul>
+                  </li>
+                  <li>物理</li>
+                  <li>化学</li>
+               </ul>
+            </div>
+            <div class="cell">
+               <ol>
+                  <li>One</li>
+                  <li>Two</li>
+                  <li>Three
+                     <ol>
+                        <li>Three One</li>
+                        <li>Three Two</li>
+                     </ol>
+                  </li>
+                  <li>Four</li>
+               </ol>
+            </div>
+         </div>
+
+
+         <h3>Blockquote</h3>
+
+         <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quis cumque similique voluptas facilis fugit inventore odit, quidem et ab, quos, blanditiis iure! Ipsum nostrum corrupti architecto fugit, culpa expedita. <cite>someone</cite>
+         </blockquote>
+
+
+         <h3>Code</h3>
+
+         <p>You can use <code>inline code</code>, <samp>inline sample output</samp> or code blocks. Use <code>.scroll</code> to prevent code wrapping.</p>
+
+         <div class="highlight language-shell" data-lang="shell"><pre><code><span class="k">while </span><span class="nb">true</span>; <span class="k">do</span> <span class="o">{</span> <span class="nb">echo</span> -e <span class="s2">"HTTP/1.1 200 OK</span><span class="se">\r\n</span><span class="s2">"</span>; cat index.html; <span class="o">}</span> | nc -l 8080; <span class="k">done</span></code></pre>
+         </div>
+
+         <samp>$ time sleep 3<br>        3.00 real         0.00 user         0.00 sys<br>$ exit</samp>
+
+         <h3>Horizontal Rule</h3>
+
+         <hr>
+
+
+         <h3>Form</h3>
+
+         <h4>Inline Form</h4>
+
+         <form>
+            <label>Name: <input type="text" placeholder="type your name here"></label>
+            <label>Email: <input type="email" placeholder="and your email here"></label>
+            <label><input type="checkbox"> Newsletter?</label>
+            <label> Select:
+               <select>
+                  <option>Option One</option>
+                  <option>Option Two</option>
+                  <option>Option Three</option>
+                  <option>Option Four</option>
+               </select>
+            </label>
+         </form>
+
+
+         <h4>Horizontal Form <small>(default on larger screens)</small></h4>
+
+         <form class="form">
+
+            <label class="form-group">
+               <input type="text" placeholder="type your name..." class="form-control">
+               <span class="form-label">TEXT</span>
+            </label>
+
+            <label class="form-group">
+               <input type="email" class="form-control">
+               <span class="form-label">EMAIL</span>
+            </label>
+
+            <label class="form-group">
+               <input type="number" class="form-control">
+               <span class="form-label">NUMBER</span>
+            </label>
+
+            <label class="form-group">
+               <input type="file" class="form-control">
+               <span class="form-label">FILE</span>
+            </label>
+
+            <label class="form-group">
+               <div class="form-control">
+                  <label><input type="checkbox"> Checkbox 1</label>
+                  <label><input type="checkbox"> Checkbox 2</label>
+                  <label><input type="checkbox"> Checkbox 3</label>
+                  <label><input type="checkbox" disabled> Checkbox 4 disabled</label>
+               </div>
+               <span class="form-label">CHECKBOX</span>
+            </label>
+
+            <label class="form-group">
+               <div class="form-control">
+                  <label><input type="radio" name="radio"> Radio 1</label>
+                  <label><input type="radio" name="radio"> Radio 2</label>
+                  <label><input type="radio" name="radio"> Radio 3</label>
+                  <label><input type="radio" name="radio"> Radio 4</label>
+                  <label><input type="radio" name="radio" disabled> Radio 5 disabled</label>
+               </div>
+               <span class="form-label">RADIO</span>
+            </label>
+
+            <label class="form-group">
+               <select class="form-control">
+                  <option>Option One</option>
+                  <option>Option Two</option>
+                  <option>Option Three</option>
+                  <option>Option Four</option>
+               </select>
+               <span class="form-label">SELECT</span>
+            </label>
+
+            <label class="form-group">
+               <textarea rows="5" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam placeat ratione nisi assumenda quo saepe quasi iste temporibus asperiores. Soluta cupuam at reprehenderit facere. Asperiores nulla rerum earum pariatur.</textarea>
+               <span class="form-label">TEXTAREA</span>
+            </label>
+
+            <button type="button" class="btn btn-primary full-width">Submit</button>
+
+         </form>
+
+
+         <h4>Stateful Form</h4>
+
+         <form class="form">
+
+            <label class="form-group form-info">
+               <input type="text" placeholder="type your name..." class="form-control">
+               <span class="form-label">INFO</span>
+            </label>
+
+            <label class="form-group form-warning">
+               <input type="text" class="form-control">
+               <span class="form-label">WARNING</span>
+            </label>
+
+         </form>
+
+
+         <h4>Help Block</h4>
+
+         <form class="form">
+
+            <label class="form-group">
+               <input type="text" placeholder="type your name..." class="form-control">
+               <span class="form-label">NORMAL</span>
+               <div class="help-block">Please only use alphanumeric characters</div>
+            </label>
+
+            <label class="form-group form-success">
+               <input type="text" value="tawian" class="form-control">
+               <span class="form-label">SUCCESS</span>
+               <div class="help-block">Congrats, this name is still available</div>
+            </label>
+
+            <label class="form-group form-error">
+               <input type="email" value="null" class="form-control">
+               <span class="form-label">ERROR</span>
+               <div class="help-block">This does not look like a valid email address</div>
+            </label>
+
+         </form>
+
+
+         <h4>Disabled</h4>
+
+         <form class="form">
+
+            <label class="form-group">
+               <input type="text" value="Lorem ipsum dolor sit amet" class="form-control" disabled>
+               <span class="form-label">TEXT</span>
+            </label>
+
+            <label class="form-group">
+               <select class="form-control" disabled>
+                  <option>Optione One</option>
+               </select>
+               <span class="form-label">SELECT</span>
+            </label>
+
+            <label class="form-group">
+               <textarea rows="3" class="form-control" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam placeat ratione nisi assumenda quo saepe quasi iste temporibus asperiores. Soluta cupuam at reprehenderit facere. Asperiores nulla rerum earum pariatur.</textarea>
+               <span class="form-label">TEXTAREA</span>
+            </label>
+
+         </form>
+
+
+         <h4>Readonly</h4>
+
+         <form class="form">
+
+            <label class="form-group">
+               <input type="text" value="Lorem ipsum dolor sit amet" class="form-control" readonly>
+               <span class="form-label">TEXT</span>
+            </label>
+
+            <label class="form-group">
+               <textarea rows="3" class="form-control" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam placeat ratione nisi assumenda quo saepe quasi iste temporibus asperiores. Soluta cupuam at reprehenderit facere. Asperiores nulla rerum earum pariatur.</textarea>
+               <span class="form-label">TEXTAREA</span>
+            </label>
+
+         </form>
+
+
+         <h4>Required</h4>
+
+         <form class="form">
+
+            <label class="form-group">
+               <input type="text" placeholder="type your name..." class="form-control" required>
+               <span class="form-label">TEXT</span>
+            </label>
+
+            <label class="form-group form-warning">
+               <textarea rows="3" class="form-control" required>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam placeat ratione nisi assumenda quo saepe quasi iste temporibus asperiores. Soluta cupuam at reprehenderit facere. Asperiores nulla rerum earum pariatur.</textarea>
+               <span class="form-label">TEXTAREA</span>
+            </label>
+
+         </form>
+
+
+         <h4>Vertical Form <small>(default on smaller screens)</small></h4>
+
+         <form class="form form-vertical">
+            <div class="grid">
+               <div class="cell">
+                  <label class="form-group">
+                     <input type="text" placeholder="type your name..." class="form-control">
+                     <span class="form-label">TEXT</span>
+                  </label>
+
+                  <label class="form-group">
+                     <div class="form-control">
+                        <label><input type="checkbox"> Checkbox 1</label>
+                        <label><input type="checkbox"> Checkbox 2</label>
+                        <label><input type="checkbox"> Checkbox 3</label>
+                        <label><input type="checkbox" disabled> Checkbox 4 disabled</label>
+                     </div>
+                     <span class="form-label">CHECKBOX</span>
+                  </label>
+
+                  <label class="form-group">
+                     <input type="email" class="form-control">
+                     <span class="form-label">EMAIL</span>
+                  </label>
+
+                  <label class="form-group">
+                     <input type="number" class="form-control">
+                     <span class="form-label">NUMBER</span>
+                  </label>
+
+                  <label class="form-group">
+                     <input type="file" class="form-control">
+                     <span class="form-label">FILE</span>
+                  </label>
+               </div>
+               <div class="cell">
+                  <label class="form-group">
+                     <select class="form-control">
+                        <option>Option One</option>
+                        <option>Option Two</option>
+                        <option>Option Three</option>
+                        <option>Option Four</option>
+                     </select>
+                     <span class="form-label">SELECT</span>
+                  </label>
+
+                  <label class="form-group">
+                     <div class="form-control">
+                        <label><input type="radio" name="radio"> Radio 1</label>
+                        <label><input type="radio" name="radio"> Radio 2</label>
+                        <label><input type="radio" name="radio"> Radio 3</label>
+                        <label><input type="radio" name="radio"> Radio 4</label>
+                        <label><input type="radio" name="radio" disabled> Radio 5 disabled</label>
+                     </div>
+                     <span class="form-label">RADIO</span>
+                  </label>
+
+                  <label class="form-group">
+                     <textarea rows="4" class="form-control">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam placeat ratione nisi assumenda quo saepe quasi iste temporibus asperiores.</textarea>
+                     <span class="form-label">TEXTAREA</span>
+                  </label>
+
+                  <button type="button" class="btn btn-primary full-width">Submit</button>
+               </div>
+            </div>
+
+         </form>
+
+
+         <h3>File Input with Dropzones, e.g. <a href="https://github.com/okonet/react-dropzone">react-dropzone</a></h3>
+
+         <div class="grid">
+            <div class="cell">
+               <div class="dropzone">Drop Files</div>
+            </div>
+            <div class="cell">
+               <div class="dropzone active">Active Style</div>
+            </div>
+            <div class="cell">
+               <div class="dropzone rejected">Rejected Style</div>
+            </div>
+         </div>
+
+
+         <h3>Table</h3>
+
+         <table class="table-fixed">
+            <thead>
+               <tr>
+                  <th>states</th>
+                  <th>param</th>
+                  <th>param</th>
+                  <th>param</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>cell states</td>
+                  <td class="bg-success">90</td>
+                  <td class="bg-warning">80</td>
+                  <td class="bg-error">70</td>
+               </tr>
+               <tr>
+                  <td>normal state</td>
+                  <td>60</td>
+                  <td>85</td>
+                  <td>80</td>
+               </tr>
+               <tr class="bg-info">
+                  <td>row state</td>
+                  <td>80</td>
+                  <td>65</td>
+                  <td>60</td>
+               </tr>
+            </tbody>
+            <caption>Table with fixed layout and caption</caption>
+         </table>
+
+         <div class="grid">
+            <div class="cell">
+               <table class="table-striped table-narrow">
+                  <thead>
+                     <tr>
+                        <th>classes</th>
+                        <th>param</th>
+                        <th>param</th>
+                        <th>param</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>narrow</td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✔</td>
+                     </tr>
+                     <tr>
+                        <td>striped</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                     </tr>
+                     <tr>
+                        <td>/</td>
+                        <td>✔</td>
+                        <td>✗</td>
+                        <td>✔</td>
+                     </tr>
+                     <tr>
+                        <td>/</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✗</td>
+                     </tr>
+                     <tr>
+                        <td>/</td>
+                        <td>✔</td>
+                        <td>✗</td>
+                        <td>✔</td>
+                     </tr>
+                     <tr>
+                        <td>/</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✗</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="cell">
+               <table class="table-hover table-wide">
+                  <thead>
+                     <tr>
+                        <th>classes</th>
+                        <th>param</th>
+                        <th>param</th>
+                        <th>param</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>wide</td>
+                        <td>✗</td>
+                        <td>✗</td>
+                        <td>✔</td>
+                     </tr>
+                     <tr>
+                        <td>hoverable</td>
+                        <td>✔</td>
+                        <td>✗</td>
+                        <td>✔</td>
+                     </tr>
+                     <tr>
+                        <td>/</td>
+                        <td>✔</td>
+                        <td>✔</td>
+                        <td>✗</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+
+
+         <h3>List Group</h3>
+
+         <div class="grid">
+            <div class="cell">
+               <ul class="list-group">
+                  <li>Cras justo odio</li>
+                  <li class="disabled">DISABLED</li>
+                  <li>Morbi leo risus <span class="tag tag-info">Tag</span></li>
+                  <li class="active">ACTIVE</li>
+                  <li>Porta ac consectetur</li>
+               </ul>
+            </div>
+            <div class="cell">
+               <div class="list-group list-striped">
+                  <a href="#">Striped</a>
+                  <a href="#">Morbi leo risus</a>
+                  <a href="#">Porta ac consectetur</a>
+                  <a href="#">Vestibulum at eros</a>
+                  <a class="active" href="#">ACTIVE LINK</a>
+               </div>
+            </div>
+            <div class="cell">
+               <div class="list-group">
+                  <button>Plain Buttons look like Links</button>
+                  <button class="active">Active Plain Button</button>
+                  <button class="btn btn-success">Success</button>
+                  <button class="btn btn-info btn-ghost">Ghost Info</button>
+                  <button class="btn btn-error btn-ghost">Ghost Error</button>
+               </div>
+            </div>
+         </div>
+
+
+         <h3>Progress bar</h3>
+
+         <div class="grid">
+            <div class="cell">
+               <p>
+                  <div class="progress-bar progress-bar-show-percent">
+                     <div style="width: 40%;" data-filled="Loaded 40%">50kb / 125kb</div>
+                  </div>
+               </p>
+
+               <p>
+                  <div class="progress-bar progress-success">
+                     <div style="width: 20%;">20%</div>
+                  </div>
+               </p>
+            </div>
+            <div class="cell">
+               with <code>.narrow</code>
+               <div class="m-b-1">
+                  <div class="progress-bar progress-error narrow">
+                     <div style="width: 30%;"></div>
+                  </div>
+               </div>
+
+               <div class="m-b-1">
+                  <div class="progress-bar progress-warning narrow">
+                     <div style="width: 60%;"></div>
+                  </div>
+               </div>
+
+               <div class="m-b-1">
+                  <div class="progress-bar progress-info narrow">
+                     <div style="width: 80%;"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <p>
+            For advanced progress bars consider <a href="https://kimmobrunfeldt.github.io/progressbar.js/" title="progressbar.js">progressbar.js</a>.
+         </p>
+
+
+         <h3>Buttons</h3>
+
+         <p>
+            <button class="btn btn-default">Default</button>
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-error">Error</button>
+            <button class="btn" disabled>Disabled</button>
+            <button class="btn btn-link">Link</button>
+         </p>
+
+         <p>
+            <button class="btn btn-default btn-ghost">Default</button>
+            <button class="btn btn-primary btn-ghost">Primary</button>
+            <button class="btn btn-success btn-ghost">Success</button>
+            <button class="btn btn-info btn-ghost">Info</button>
+            <button class="btn btn-warning btn-ghost">Warning</button>
+            <button class="btn btn-error btn-ghost">Error</button>
+            <button class="btn btn-ghost" disabled>Disabled</button>
+         </p>
+
+         <p>
+            <button class="btn btn-primary btn-ghost full-width">Block Level Button</button>
+         </p>
+
+
+         <h3>Button Groups</h3>
+
+         <div class="grid">
+            <div class="cell cell-4">
+               <div class="btn-group">
+                  <button class="btn btn-default btn-ghost">Left</button>
+                  <button class="btn btn-default btn-ghost">Middle</button>
+                  <button class="btn btn-default btn-ghost">Right</button>
+               </div>
+            </div>
+
+            <div class="cell cell-4">
+               <div class="btn-group">
+                  <button class="btn btn-success">
+                     <svg class="i"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons.svg#i-checkmark"></use></svg>
+                  </button>
+                  <button class="btn btn-error">
+                     <svg class="i"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons.svg#i-close"></use></svg>
+                  </button>
+               </div>
+               <div class="btn-group">
+                  <button class="btn btn-primary">1</button>
+                  <button class="btn btn-info">2</button>
+                  <button class="btn btn-warning">3</button>
+               </div>
+            </div>
+
+            <div class="cell cell-4">
+               <div class="btn-group full-width">
+                  <button class="btn btn-default">Full</button>
+                  <button class="btn btn-default">Width</button>
+               </div>
+            </div>
+
+            <div class="cell cell-4">
+               <div class="btn-group full-width">
+                  <button class="btn btn-default">Way</button>
+                  <button class="btn btn-default">too many</button>
+                  <button class="btn btn-default">Elements</button>
+                  <button class="btn btn-default">to fit in</button>
+                  <button class="btn btn-default">one line</button>
+               </div>
+            </div>
+
+            <div class="cell cell-4">
+               <button class="btn btn-primary btn-ghost">
+                  <svg class="i"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons.svg#i-chevron-left"></use></svg>
+               </button>
+               <div class="btn-group">
+                  <button class="btn btn-primary btn-ghost">1</button>
+                  <button class="btn btn-primary btn-ghost">2</button>
+                  <button class="btn btn-primary btn-ghost">3</button>
+
+               </div>
+               <button class="btn btn-primary btn-ghost">
+                  <svg class="i"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="icons.svg#i-chevron-right"></use></svg>
+               </button>
+            </div>
+
+            <div class="cell cell-4">
+               <div class="btn-group">
+                  <span class="btn-addon">Prefix</span>
+                  <button class="btn btn-default btn-ghost">1</button>
+                  <button class="btn btn-default btn-ghost">2</button>
+                  <button class="btn btn-default btn-ghost">3</button>
+                  <span class="btn-addon">Postfix</span>
+               </div>
+            </div>
+         </div>
+
+
+         <h3>Loading Indicator<span class="loading"></span></h3>
+
+         <button class="btn btn-info btn-ghost">Loading<span class="loading"></span></button>
+
+
+         <h3>Tags</h3>
+
+         <p>
+            Tags have different states like
+            <span class="tag">normal</span> and
+            <span class="tag tag-success">success</span> and
+            <span class="tag tag-info">info</span> and
+            <span class="tag tag-warning">warning</span> and
+            <span class="tag tag-error">error</span>.
+         </p>
+
+
+         <h3>Icons <small>from <a href="https://github.com/danklammer/bytesize-icons">bytesize-icons</a></small></h3>
+
+         <p>The icons don't work in IE / Edge. Consider inlining the svg file for Edge or <a href="https://github.com/jonathantneal/svg4everybody">svg4everybody</a> for IE.</p>
+
+         <p>
+            <button class="btn btn-default">Text</button>
+            <button class="btn btn-info">
+               <svg class="i"><use xlink:href="icons.svg#i-search" /></svg> Search
+            </button>
+            <button class="btn btn-error">
+               <svg class="i"><use xlink:href="icons.svg#i-reload" /></svg> Reload
+            </button>
+            <button class="btn btn-warning">
+               <svg class="i"><use xlink:href="icons.svg#i-plus" /></svg>
+            </button>
+            <span class="btn-group">
+               <button class="btn btn-primary btn-ghost">
+                  <svg class="i"><use xlink:href="icons.svg#i-start" /></svg>
+               </button>
+               <button class="btn btn-primary btn-ghost">
+                  <svg class="i"><use xlink:href="icons.svg#i-pause" /></svg>
+               </button>
+               <button class="btn btn-primary btn-ghost">
+                  <svg class="i"><use xlink:href="icons.svg#i-end" /></svg>
+               </button>
+            </span>
+            <span class="tag tag-success"><svg class="i"><use xlink:href="icons.svg#i-checkmark" /></svg> Yay</span>
+         </p>
+         <p>
+            Can be sized, e.g. <svg class="i"><use xlink:href="icons.svg#i-photo" /></svg> normal, <svg class="i i-medium"><use xlink:href="icons.svg#i-photo" /></svg> medium or <svg class="i i-large"><use xlink:href="icons.svg#i-photo" /></svg> large.
+         </p>
+
+         <p class="i-large">
+            <!-- remove title attribute in production -->
+            <svg class="i"><use xlink:href="icons.svg#i-search" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-close" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-plus" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-minus" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-play" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-pause" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-backwards" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-forwards" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-star" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-checkmark" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-chevron-top" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-chevron-right" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-chevron-bottom" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-chevron-left" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-arrow-top" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-arrow-right" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-arrow-bottom" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-arrow-left" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-caret-top" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-caret-right" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-caret-bottom" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-caret-left" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-start" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-end" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-eject" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-mute" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-volume" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-ban" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-flag" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-options" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-settings" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-heart" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-clock" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-menu" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-msg" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-photo" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-camera" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-video" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-music" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-mail" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-home" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-user" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-trash" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-paperclip" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-file" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-folder" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-folder-open" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-work" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-portfolio" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-eye" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-bookmark" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-tag" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-lightning" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-location" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-activity" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-export" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-import" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-inbox" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-archive" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-reply" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-edit" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-compose" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-upload" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-download" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-send" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-link" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-code" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-lock" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-unlock" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-bell" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-book" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-calendar" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-print" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-alert" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-info" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-creditcard" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-cart" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-gift" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-external" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-reload" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-ellipsis-horizontal" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-ellipsis-vertical" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-twitter" /></svg>
+            <svg class="i"><use xlink:href="icons.svg#i-github" /></svg>
+         </p>
+
+
+         <h3>Tooltips <small>naive version, might be out of screen</small></h3>
+
+         <div class="grid">
+            <div class="cell">
+               <button class="btn btn-default" data-tooltip="I'm at the top">Tooltip Top</button>
+            </div>
+            <div class="cell">
+               <button class="tooltip-right tooltip-info btn btn-default" data-tooltip="I'm at the right with info state">Tooltip Right</button>
+            </div>
+            <div class="cell">
+               <button class="tooltip-left btn btn-default" data-tooltip="I'm at the left">Tooltip Left</button>
+            </div>
+            <div class="cell">
+               <button class="tooltip-bottom btn btn-default" data-tooltip="I'm at the bottom">Tooltip Bottom</button>
+            </div>
+         </div>
+
+
+         <h3>Cards</h3>
+
+         <p>
+            <div class="card">
+               <div class="card-header">TITLE</div>
+               <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.
+               </div>
+            </div>
+         </p>
+
+         <div class="grid">
+            <div class="cell">
+               <div class="card card-success">
+                  <header class="card-header">in grid</header>
+                  <div class="card-body">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.
+                  </div>
+               </div>
+            </div>
+            <div class="cell">
+               <div class="card card-warning">
+                  <header class="card-header">with list group</header>
+                  <div class="list-group">
+                     <span>Cras justo odio</span>
+                     <span>Dapibus ac facilisis in</span>
+                     <span>Morbi leo risus</span>
+                     <span>Vestibulum at eros</span>
+                     <span>Porta ac consectetur</span>
+                  </div>
+               </div>
+            </div>
+            <div class="cell">
+               <div class="card">
+                  <header class="card-header">with image</header>
+                  <img class="full-width" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAEElEQVR42mNUnPb5PwMUAAAajQKrlc3KqAAAAABJRU5ErkJggg==" alt="Image" height="109">
+                  <div class="card-body">and a second body</div>
+                  <pre class="card-body">echo "and a third"</pre>
+               </div>
+            </div>
+         </div>
+
+
+         <h3>Alerts</h3>
+
+         <div class="grid">
+            <div class="cell cell-4"><p class="alert">Default message</p></div>
+            <div class="cell cell-4"><p class="alert alert-info">Info message</p></div>
+            <div class="cell cell-4"><p class="alert alert-warning">Warning message</p></div>
+            <div class="cell cell-6"><p class="alert alert-success">Success message <button class="close">×</button></p></div>
+            <div class="cell cell-6"><p class="alert alert-error">Error message <button class="close">×</button></p></div>
+         </div>
+
+
+         <h3>Images and Figures</h3>
+
+         <p>You can use <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAEElEQVR42mNUnPb5PwMUAAAajQKrlc3KqAAAAABJRU5ErkJggg==" width="24" height="12" alt="Image"> inline.</p>
+
+         <h4><code>.full-width</code></h4>
+
+         <img class="full-width" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAEElEQVR42mNUnPb5PwMUAAAajQKrlc3KqAAAAABJRU5ErkJggg==" alt="Image">
+
+         <h4>Figure with Caption</h4>
+
+         <figure>
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAEElEQVR42mNUnPb5PwMUAAAajQKrlc3KqAAAAABJRU5ErkJggg==" alt="Image">
+           <figcaption>Bildbeschreibung</figcaption>
+         </figure>
+
+
+         <h2>Details &amp; Summary</h2>
+
+         <details>
+           <summary>Hidden Text Sample</summary>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum molestiae et dicta, vero alias ab tempore obcaecati tempora odit voluptates. Eum inventore omnis, ullam rerum tenetur optio quasi a totam!</p>
+         </details>
+
+         <details>
+           <summary>Hidden Code Sample</summary>
+           <samp class="full-width">$ time sleep 3<br>        3.00 real         0.00 user         0.00 sys<br>$ exit</samp>
+         </details>
+
+         <h3>Toggleable Cards</h3>
+
+         <details class="card">
+            <summary class="card-header">Card Header</summary>
+            <div class="card-body">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut maiores excepturi sint.
+            </div>
+            <samp class="card-body full-width">$ time sleep 3<br>        3.00 real         0.00 user         0.00 sys<br>$ exit</samp>
+         </details>
+
+
+         <h2>Basic</h2>
+
+         <p>Use <code>.container</code> to centralize the main content.</p>
+
+         <p>Use <code>.site-header</code>, <code>.site-main</code> and <code>.site-footer</code> for the main sectioning elements.</p>
+
+         <p><code>.site-header</code> contains <code>.site-nav</code> which is not responsive by default but can be appended by <code>.responsive-nav</code> to collapse and show a hamburger icon on smaller screens. It can carry <code>.responsive-nav-animated</code> to add a sliding animation to the nav.</p>
+
+
+         <h3>Grid</h3>
+
+         <div class="example-grid">
+
+            <div class="m-b-1">
+               <div class="grid">
+                  <div class="cell"><div class="inner">space</div></div>
+                  <div class="cell"><div class="inner">can be</div></div>
+                  <div class="cell"><div class="inner">flexibly</div></div>
+                  <div class="cell"><div class="inner">distributed</div></div>
+               </div>
+            </div>
+
+            <div class="m-b-1">
+               <div class="grid">
+                  <div class="cell cell-4"><div class="inner">or</div></div>
+                  <div class="cell cell-4"><div class="inner">fixed</div></div>
+                  <div class="cell cell-4"><div class="inner">4</div></div>
+               </div>
+            </div>
+
+            <div class="m-b-1">
+               <div class="grid">
+                  <div class="cell cell-4"><div class="inner">4</div></div>
+                  <div class="cell cell-8"><div class="inner">8</div></div>
+               </div>
+            </div>
+
+            <div class="grid m-b-2">
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+               <div class="cell cell-1"><div class="inner">1</div></div>
+            </div>
+
+         </div>
+
+         <h3>Inline Grid</h3>
+
+         <div class="grid-inline m-b-2">
+            <input type="text" placeholder="use `cell` to let an element grow" class="cell">
+            <button type="button" class="btn btn-default">other elements</button>
+            <span>take the size they need</span>
+         </div>
+
+
+         <h3>Modifiers</h3>
+
+         <div class="grid">
+            <div class="cell">
+               <h4><code>.grid</code> modifiers</h4>
+               <ul>
+                  <li>To change spacing use <code>grid-narrow</code> or <code>grid-wide</code></li>
+               </ul>
+               <ul>
+                  <li>To align items with <strong>align-items</strong> use
+                     <ul>
+                        <li><code>grid-top</code>: To top</li>
+                        <li><code>grid-middle</code>: To middle</li>
+                        <li><code>grid-bottom</code>: To bottom</li>
+                        <li><code>grid-stretch</code>: Stretch items</li>
+                        <li><code>grid-baseline</code>: To baseline</li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul>
+                  <li>To layout contents with <strong>justify-content</strong> use
+                     <ul>
+                        <li><code>grid-left</code>: To left</li>
+                        <li><code>grid-center</code>: To center</li>
+                        <li><code>grid-right</code>: To right</li>
+                        <li><code>grid-between</code>: Add spaces between items</li>
+                        <li><code>grid-around</code>: Add spaces around items</li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="cell">
+               <h4><code>.cell</code> modifiers</h4>
+               <ul>
+                  <li><code>grid-top</code>: To top</li>
+                  <li><code>grid-middle</code>: To middle</li>
+                  <li><code>grid-bottom</code>: To bottom</li>
+               </ul>
+               <ul>
+                  <li><code>cell-1</code>: Set item width to 8.3% of parent</li>
+                  <li><code>cell-2</code>: Set item width to 16.7% of parent</li>
+                  <li><code>cell-3</code>: Set item width to 25% of parent</li>
+                  <li><code>cell-4</code>: Set item width to 33% of parent</li>
+                  <li><code>cell-5</code>: Set item width to 41.7% of parent</li>
+                  <li><code>cell-6</code>: Set item width to 50% of parent</li>
+                  <li><code>cell-7</code>: Set item width to 58.3% of parent</li>
+                  <li><code>cell-8</code>: Set item width to 66.7% of parent</li>
+                  <li><code>cell-9</code>: Set item width to 75% of parent</li>
+                  <li><code>cell-10</code>: Set item width to 83.3% of parent</li>
+                  <li><code>cell-11</code>: Set item width to 91.7% of parent</li>
+                  <li><code>cell-12</code>: Set item width to 100% of parent</li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="footnotes dashed-top">
+            <ol>
+               <li id="fn:example">
+                  <p>Example footnote text. <a href="#fnref:example" class="reversefootnote">&#8617;</a></p>
+               </li>
+            </ol>
+         </div>
+
+      </main>
+
+      <footer class="site-footer dashed-top">
+         Footer text – <a href="#" title="Link">Link</a> <a href="#" title="Link">Link</a>
+      </footer>
+
+   </div>
+
+   <a class="github-corner" href="https://github.com/tawian/tawian-frontend" aria-label="View source on Github">
+      <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#212121; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+         <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;"></path>
+         <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor"></path>
+      </svg>
+   </a>
+
 </body>
-</html>
 
+</html>
